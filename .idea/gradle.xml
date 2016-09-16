@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.8" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AVLoadingIndicatorView" />
+            <option value="$PROJECT_DIR$/CircularProgressButton" />
+            <option value="$PROJECT_DIR$/FlycoTabLayout" />
+            <option value="$PROJECT_DIR$/HTextView" />
+            <option value="$PROJECT_DIR$/RippleEffect" />
+            <option value="$PROJECT_DIR$/SwipeMenuListView" />
+            <option value="$PROJECT_DIR$/SwitchButton" />
+            <option value="$PROJECT_DIR$/WaveView" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

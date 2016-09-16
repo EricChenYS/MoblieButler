@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AVLoadingIndicatorView/AVLoadingIndicatorView.iml" filepath="$PROJECT_DIR$/AVLoadingIndicatorView/AVLoadingIndicatorView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CircularProgressButton/CircularProgressButton.iml" filepath="$PROJECT_DIR$/CircularProgressButton/CircularProgressButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout/FlycoTabLayout.iml" filepath="$PROJECT_DIR$/FlycoTabLayout/FlycoTabLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTextView/HTextView.iml" filepath="$PROJECT_DIR$/HTextView/HTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MoblieButler.iml" filepath="$PROJECT_DIR$/MoblieButler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RippleEffect/RippleEffect.iml" filepath="$PROJECT_DIR$/RippleEffect/RippleEffect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeMenuListView/SwipeMenuListView.iml" filepath="$PROJECT_DIR$/SwipeMenuListView/SwipeMenuListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwitchButton/SwitchButton.iml" filepath="$PROJECT_DIR$/SwitchButton/SwitchButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WaveView/WaveView.iml" filepath="$PROJECT_DIR$/WaveView/WaveView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

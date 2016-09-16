@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="com.chhd.mobliebutler.activity.GuardAgainstTheftFinishActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="亲友号码" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="5556"
+                android:textColor="#666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="300">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="防盗功能" />
+
+            <com.chhd.mobliebutler.view.MySwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                app:kswTintColor="#00379C" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="重新设置" />
+
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f0f0f0"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="用任意手机向被盗手机发送以下指令"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="报警提醒：#*alarm*#\n\n远程定位：#*location*#\n\n锁定手机：#*lock*#\n\n清空数据：#*clear*#"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff"
+                android:padding="10dp">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:rv_centered="true"
+                    app:rv_rippleDuration="150">
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_button"
+                        android:text="备忘防盗指令"
+                        android:textColor="#ffffff" />
+
+                </com.andexert.library.RippleView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    tools:context="com.chhd.mobliebutler.activity.ContactActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="请选择一个亲友号码"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="#dddddd">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_centered="true"
+            app:rv_color="#cccccc"
+            app:rv_rippleDuration="150">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#f5f5f5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/ic_mode_edit_white_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="手动输入号码" />
+
+            </RelativeLayout>
+
+        </com.andexert.library.RippleView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#dddddd"
+            android:dividerHeight="0.5dp" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="通讯录是空的"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <com.chhd.mobliebutler.view.SideBar
+            android:id="@+id/side_bar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_text_view_dialog"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

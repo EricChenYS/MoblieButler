@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="com.chhd.mobliebutler.activity.OpenGuardAgainstTheft1Activity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_next"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="请设置防盗密码" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="防止他人修改防盗中心，同时作为远程锁屏密码"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <com.chhd.mobliebutler.view.InputView
+            android:id="@+id/iv_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:drawableLeft="@mipmap/ic_lock_outline_white_18dp"
+            app:hint="密码：6—20位字母/数字"
+            app:type="textPassword" />
+
+        <com.chhd.mobliebutler.view.InputView
+            android:id="@+id/iv_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:drawableLeft="@mipmap/ic_lock_outline_white_18dp"
+            app:hint="确认密码"
+            app:type="textPassword" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EBEBEB"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:padding="10dp">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:text="下一步"
+                    android:textColor="#ffffff" />
+
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chhd.mobliebutler.activity.ClearActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_scan_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#00379C">
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/htv_total_cacheSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="88MB"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:progressDrawable="@drawable/layer_list_progressbar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:text="应用名称"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.idunnololz.widgets.AnimatedExpandableListView
+        android:id="@+id/aelv_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_clear"
+        android:layout_below="@+id/rl_scan_info"
+        android:childDivider="#F6F6F6"
+        android:divider="@null"
+        android:dividerHeight="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EBEBEB"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:padding="10dp">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:text="一键清理"
+                    android:textColor="#ffffff" />
+
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EBEBEB"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:padding="10dp">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <Button
+                    android:id="@+id/btn_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:text="扫描"
+                    android:textColor="#ffffff" />
+
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar"/>
+
+</RelativeLayout>

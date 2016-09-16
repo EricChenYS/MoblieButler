@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chhd.mobliebutler.activity.AntiVirusActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_wv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.john.waveview.WaveView xmlns:wave="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00379C"
+            wave:above_wave_color="@android:color/white"
+            wave:blow_wave_color="@android:color/white"
+            wave:progress="50"
+            wave:wave_height="little"
+            wave:wave_hz="normal"
+            wave:wave_length="middle" />
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/htv_scan_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="共扫描 0 项"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_virus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_scan"
+        android:layout_below="@+id/rl_wv"
+        android:divider="#F6F6F6"
+        android:dividerHeight="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EBEBEB">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:padding="10dp">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/cpb_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    app:cpb_colorIndicator="#00379C"
+                    app:cpb_paddingProgress="10dp"
+                    app:cpb_selectorComplete="@drawable/selector_cpb_complete"
+                    app:cpb_selectorError="@drawable/selector_cpb_error"
+                    app:cpb_selectorIdle="@drawable/selector_cpb_idle"
+                    app:cpb_textComplete="扫描安全"
+                    app:cpb_textError="发现病毒, 一键清除"
+                    app:cpb_textIdle="扫描" />
+
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar"/>
+
+</RelativeLayout>

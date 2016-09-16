@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00379C"
+        android:gravity="center"
+        android:text="添加黑名单"
+        android:textColor="#ffffff" />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@mipmap/block_blacklist_sms"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="从短信记录添加"
+            android:textColor="#999999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_calllog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@mipmap/block_blacklist_calllog"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="从通话记录添加"
+            android:textColor="#333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@mipmap/block_blacklist_contact"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="从联系人添加"
+            android:textColor="#999999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_byhand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_centered="true"
+        app:rv_color="#cccccc"
+        app:rv_rippleDuration="150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@mipmap/block_blacklist_byhand"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="手工输入号码"
+            android:textColor="#333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

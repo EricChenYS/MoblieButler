@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">手机管家</string>
+    <string name="menu_open">打开</string>
+    <string name="menu_close">关闭</string>
+    <string name="sample_device_admin">手机管家</string>
+    <string name="sample_device_admin_description">手机防盗模块，如果需要卸载本软件，需要在设备管理器取消激活</string>
+</resources>
