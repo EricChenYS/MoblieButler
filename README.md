@@ -6,8 +6,8 @@
 - 提取密码：7yx7
 
 # 截图
-![image]()
-![image]()
+![image](https://github.com/conghuahuadan/MoblieButler/blob/master/screenshots/sp160917_004657.png?raw=true)
+![image](https://github.com/conghuahuadan/MoblieButler/blob/master/screenshots/sp160917_005001.png?raw=true)
 
 # 备注
 - 真机测试与模拟器可能有出入
